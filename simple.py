@@ -1,2 +1,2 @@
 #!/usr/bin/python
-python --version
+python -version
