@@ -1,0 +1,14 @@
+node{
+
+stage('Create file'){
+    sh 'touch newfile'
+    
+}
+stage('Write'){
+    sh 'echo "This is message" > newfile'
+}
+stage('Print'){
+    sh 'cat newfile'
+}
+
+}
