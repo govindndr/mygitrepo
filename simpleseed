@@ -1,4 +1,6 @@
-job('simpleTrigger'){
+
+for (i=0;i<=10;i++){
+job("job-$i"){
  parameters{
   stringParam('Object','Undescribed','Simle param')
  }
@@ -9,4 +11,6 @@ job('simpleTrigger'){
  publishers{
   downstream('simpleJsonWithParameter','SUCCESS')
  }
+}
+
 }
